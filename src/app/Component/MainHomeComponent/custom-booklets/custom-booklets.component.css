@@ -1,0 +1,427 @@
+
+.main3{
+    background: white  ;
+  }
+  
+  .main{
+  
+     height: 9vh;
+     align-items: center;
+  }
+  
+  .main4{
+  
+    height: 110vh;
+    align-items: center;
+  }
+  
+  .main4 h1{
+    padding-top: 18px;
+    color: white;
+  }
+  
+  
+  .map1{
+    position: relative;
+    padding-top: 40px;
+    padding-left: 130px;
+  }
+  
+  .add h2{
+    text-align: center;
+  }
+  
+  .add li{
+    
+    list-style: none;
+  }
+  
+  
+  
+  .foot li{
+    padding-left: 50px;
+   display: inline;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .foot li a{
+    color: white!important;
+  }
+  
+  .foot li a:hover{
+    color: #555!important;
+    transition: 0.2s;
+  }
+  
+  
+  .hero-btn4{
+  
+  display: inline-block;
+  text-decoration: none;
+  column-rule: #fff;
+  border: 1px solid black;
+  border-radius: 7px;
+  padding: 11px 25px;
+  color: black;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.5s linear; /* vendorless fallback */
+  -o-transition: color 0.5s linear; /* opera */
+  -ms-transition: color 0.5s linear; /* IE 10 */
+  -moz-transition: color 0.5s linear; /* Firefox */
+  -webkit-transition: color 0.5s linear;/*safari chrome*/
+  }
+  
+  
+  
+  .hero-btn4:hover{
+  color:black;
+  border-color: #202A44;
+  background-color: #50C878;
+  cursor: pointer;
+  transition: 0.5s;
+  }
+  
+  
+  
+  .hero-btn5{
+  
+    display: inline-block;
+    text-decoration: none;
+    column-rule: #fff;
+    border: 1px solid white;
+   
+    padding: 11px 25px;
+    color: white;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.5s linear; /* vendorless fallback */
+    -o-transition: color 0.5s linear; /* opera */
+    -ms-transition: color 0.5s linear; /* IE 10 */
+    -moz-transition: color 0.5s linear; /* Firefox */
+    -webkit-transition: color 0.5s linear;/*safari chrome*/
+    }
+    
+    
+    
+    .hero-btn5:hover{
+    color:black;
+    border-color: #202A44;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    }
+  
+  
+  .btn-info{
+    background: #50C878;
+    border-color: #50C878;
+  }
+  
+  .btn-info:hover{
+    background: black!important;
+    border-color: black!important;
+    color: #fff!important;
+  }
+  
+  /* footer */
+  
+  
+  .footer{
+  
+    height: 48vh;
+    
+  }
+  
+  /* booklets */
+  
+  .books{
+    background: #fff;
+    /* height: 130vh; */
+  }
+  .card{
+    
+    position: relative;
+    width: 350px;
+    height: 190px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.2s;
+  }
+  
+  .card:hover{
+    height: 390px;
+  
+    
+  }
+  
+  
+  
+  .imgBx{
+    position: absolute;
+    left: 50%;
+    top:-50px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0, 0,0.35);
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  .card:hover .imgBx {
+    scroll-behavior: smooth;
+    width: 250px;
+    height: 250px;
+  }
+  
+  
+  
+  .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .card .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center ;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  
+  .card .content .details{
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(162px);
+  
+  }
+  
+  .card:hover .content .details{
+    transform: translateY(0px);
+  }
+  
+  .card .content .details h2{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2rem;
+    transition: 0.8s;
+  }
+  
+  .card:hover .content .details h2{
+    font-size: 1.25rem;
+  
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.2rem;
+  }
+  
+  .card .content .details h2 span{
+    font-size: 0.75rem;
+    font-weight: 500;
+    opacity: 0.5;
+  }
+  
+  .card .content .details .data{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  /* RESPONSIVE */
+  
+  @media (max-width: 1600px) {
+    .cards {
+      justify-content: center;
+    }
+  }
+  
+  
+  /* media queries */
+  
+  
+  
+  
+  @media(max-width: 700px){
+  
+  
+    .at{
+      padding-top: 219px;
+      color: black;
+    }
+  
+  
+    .row{
+        flex-direction:column;
+    }
+  
+    .slider .quote {
+        font-size: 15px;
+       
+      }
+  
+      .mask {
+        text-align: left;
+        overflow: hidden;
+        height: 320px;
+      }
+  
+      
+      
+      
+      .main{
+        
+        height: 3vh;
+        align-items: center;
+    }
+  
+    .hero-btn5{
+      display: none;
+    }
+  
+    
+       
+        img#mob{    
+            display: none;
+            
+        }
+       
+  
+  
+    .tutors{
+        height: 170vh;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+    }
+  
+    .timeline{
+      margin: 50px auto;
+      height: 120vh;
+  
+    }
+  
+    .timeline::after{
+      left: 31px;
+    }
+  
+    .container1{
+      width: 100%;
+      padding-left: 80px;
+      padding-right: 25px;
+    }
+  
+    .text-box{
+      font-size: 13px;
+    }
+  
+    .text-box small{
+      margin-bottom: 10px;
+    }
+    .right-container {
+      left: 0;
+    }
+  
+    .left-container .im, .right-container .im{
+      left: 10px;
+    }
+  
+    .left-container-arrow, .right-container-arrow{
+      border-radius: 15px solid #50C878;
+      border-left: 0;
+      left: 15px;
+    }
+  
+    .btn-info{
+      background: black!important;
+      border-color: black!important;
+      color: #fff!important;
+    }
+  
+    .map1{
+      display: none;
+    }
+  
+    
+  
+    
+  }
+  
+  
+  
+  @media screen and (max-width: 720px) {
+    .ia-container { 
+    width: 540px; 
+  }
+  
+  .ia-container figure { 
+    left: 40px; 
+    width: 260px; 
+  }
+  
+  .ia-container input { 
+    width: 40px; 
+  }
+  
+  .ia-container input:checked ~ figure { 
+    left: 260px; 
+  }
+  
+  .ia-container figcaption span { 
+    font-size: 16px; 
+  }
+  }
+  
+  
+  
+  @media screen and (max-width: 520px) {
+    .ia-container { 
+    width: 320px; 
+  }
+  
+  .ia-container figure { 
+    left: 20px; 
+    width: 180px; 
+  }
+  
+  .ia-container input { 
+    width: 20px; 
+  }
+  
+  .ia-container input:checked ~ figure { 
+    left: 180px; 
+  }
+  
+  .ia-container figcaption span { 
+    font-size: 12px; 
+    letter-spacing: 2px; 
+    padding: 10px; 
+    margin-top: -20px; 
+  } 
+    .footer{
+        height: 29vh;
+        background-color: #111!important;
+    }
+  .container88{
+    background: #111;
+  }
+  
+  }

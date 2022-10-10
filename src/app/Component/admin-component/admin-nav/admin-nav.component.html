@@ -1,0 +1,74 @@
+
+
+<!-- <ul class="nav nav-style justify-content-end">
+
+  <li class="nav-item  nav-hover">
+    <p>
+    
+      <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+      
+        <span class="cdk-visually-hidden">
+          Example with a home icon with overlaid badge showing the number 15
+        </span>
+    </p>
+  </li>
+  <li class="nav-item nav-hover">
+    <a class="nav-link fs-6 text-dark" href="#">Link</a>
+  </li>
+  <li class="nav-item nav-hover">
+    <a class="nav-link fs-6 text-dark" href="#">Link</a>
+  </li>
+ 
+  <li class="nav-item">
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+     
+    </form>
+  </li>
+  <li class="nav-item">
+    <button mat-button [matMenuTriggerFor]="beforeMenu"> <mat-icon>menu</mat-icon></button>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+   <button mat-menu-item>Profile</button>
+   <button mat-menu-item (click)="logout()">Logout</button>
+    </mat-menu>
+  </li>
+ 
+</ul>  -->
+
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Dhamaland</mat-toolbar>
+    <mat-nav-list>
+      <a routerLink="home" mat-list-item href="#"><mat-icon>home</mat-icon> Home</a>
+      <a routerLink="student-list" mat-list-item href="#"><mat-icon>people</mat-icon> Students</a>
+      <a routerLink="restrict-students" mat-list-item href="#"><mat-icon>block</mat-icon> Restrict Students</a>
+      <a  routerLink="free-course" mat-list-item href="#"><mat-icon>people</mat-icon> Free Course List</a>
+      <a  routerLink="add-booklet" mat-list-item href="#"><mat-icon>collections_bookmark</mat-icon> Add Booklet</a>
+      <a  routerLink="add-blog" mat-list-item href="#"><mat-icon>library_books</mat-icon> Add Blog</a>
+      <a  routerLink="new-enquries" mat-list-item href="#"><mat-icon>question_answer</mat-icon> New Enquries</a>
+      <a  routerLink="email" mat-list-item href="#" ><mat-icon > email</mat-icon>  Email</a>
+
+
+ 
+    </mat-nav-list>
+  </mat-sidenav>
+  
+  <mat-sidenav-content>
+
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+
+      <br>
+      <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

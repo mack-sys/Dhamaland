@@ -1,0 +1,69 @@
+
+
+  <div class="hsec" style="background: black; padding-top: 30px; padding-bottom: 30px;">
+
+
+
+
+
+
+    <div class="container hcon ">
+      <div class="row">
+
+        <div class="col-10">
+          <h1 class="co"
+            style="text-align: center; padding-top:20px; color: #fff; font-family: poppins; font-size: xx-large; padding-left: 198px; ">
+            Booklets</h1>
+        </div>
+        <div class="col-2" style="padding-top: 10px;">
+          <a href="contact.html" class="hero-btn5">Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="books">
+    <div class="container">
+      <div class="row">
+        <h2 style="text-align: center; font-family:poppins; padding-top:50px;">Books are available to download</h2>
+        <hr>
+        <div class="col" style="padding-top: 60px;"  *ngFor="let file of fileInfos | async;let i=index;" >
+          <div class="card">
+            <div class="imgBx">
+              <img src="assets/img/book.jpg" alt="">
+            </div>
+            <div class="content">
+              <div class="details">
+                <h2 style="font-family: poppins;">Book {{i+1}} <br> <span>Detail about the book.</span></h2>
+                <div class="data">
+                  <p style="font-family: poppins;">To download the book press the button below ! </p>
+                 
+
+                </div>
+                <a href="{{ file.url }}" class="hero-btn4">{{file.name}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  
+
+        
+
+  
+      </div>
+
+
+      
+
+    </div>
+    <div class="jumbotron jumbotron-fluid" style="background: #fff;">
+      <div class="container">
+        <h1 class="display-6" style="color: black;">For academics go to courses section !</h1>
+        <hr> <a href="#" class="hero-btn4">Courses</a>
+
+      </div>
+    </div>
+  </section>
+  <app-footer class=""></app-footer>

@@ -1,0 +1,127 @@
+<form [formGroup]="addressForm" novalidate (ngSubmit)="onSubmit()" name="addressForm">
+  <mat-card class="shipping-card">
+    <mat-card-header class="bg-primary pt-2 text-light mb-2 p-2">
+      <mat-card-title>Student Registration Form</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+   
+      <div class="row mb-2">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="First name" formControlName="firstName" >
+            <mat-error *ngIf="addressForm.controls['firstName'].hasError('required')">
+              First name is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+     
+      </div>
+      <div class="row mb-2">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Last name" formControlName="lastName">
+            <mat-error *ngIf="addressForm.controls['lastName'].hasError('required')">
+              Last name is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Email" formControlName="email">
+            <mat-error *ngIf="addressForm.controls['email'].hasError('required')">
+              Email <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+         
+        </div>
+      </div>
+
+     
+      <div class="row mb-2">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input type="password" matInput placeholder="Password" formControlName="password">
+            <mat-error *ngIf="addressForm.controls['password'].hasError('required')">
+              Password <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <!-- <div class="row mb-2">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input type="password" matInput placeholder="Confirm Password" formControlName="confirmPassword">
+            <mat-error *ngIf="addressForm.controls['confirmPassword'].hasError('required')">
+              Password <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div> -->
+      <div class="row mb-2">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input type="text" matInput placeholder="Address" formControlName="address">
+            <mat-error *ngIf="addressForm.controls['address'].hasError('required')">
+              Password <strong>required</strong>
+            </mat-error>
+        
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input type="number" matInput placeholder="Contact Number" formControlName="phoneNumber">
+            <mat-error *ngIf="addressForm.controls['phoneNumber'].hasError('required')">
+              Phone number <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+
+   
+      <div class="row mb-2">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="City" formControlName="city">
+            <mat-error *ngIf="addressForm.controls['city'].hasError('required')">
+              City is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="full-width">
+            <mat-select placeholder="State" formControlName="state">
+              <mat-option *ngFor="let state of states" [value]="state.name">
+                {{ state.name }}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="addressForm.controls['state'].hasError('required')">
+              State is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput #postalCode maxlength="5" placeholder="Postal Code" type="number" formControlName="postalCode">
+            <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+          </mat-form-field>
+        </div>
+      </div>
+    
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit" >Registor</button>
+      
+    </mat-card-actions>
+    <mat-card>
+     <span>Already Registor</span>
+     <a mat-flat-button routerLink="/student-login" target="_blank">SignIn</a>
+    </mat-card>
+    
+  </mat-card>
+</form>

@@ -1,0 +1,76 @@
+.list-unstyled1 ul{
+    display: inline;
+}
+
+.mb-5{
+    padding-top: 20px;
+    padding-left: 150px;
+   
+}
+
+
+
+.footer-copyright a{
+    text-decoration: none;
+    color:#777;
+    transition: 0.7s;
+}
+
+.footer-copyright a:hover{
+    color:#50C878;
+}
+
+
+.fb-ic{
+    color: #555;
+    transition: 0.5s;
+}
+
+.tw-ic{
+    color: #555;
+    transition: 0.5s;
+}
+
+.li-ic{
+    color: #555;
+    transition: 0.5s;
+}
+
+.ins-ic{
+    color: #555;
+    transition: 0.5s;
+}
+
+
+.fb-ic:hover{
+    color: #4267B2;
+    
+}
+
+.tw-ic:hover{
+    color: #00acee;
+    
+}
+
+.li-ic:hover{
+    color:  #0A66C2;
+    
+}
+
+.ins-ic:hover{
+    color: #bc2a8d;
+    
+}
+
+.addr li,h4:hover{
+    transition: 0.44s;
+    color: #50C878!important;
+}
+
+@media screen and (max-width: 700px){
+    
+    .mb-5{
+        padding-top: 0px;
+        padding-left: 20px;
+    }
+}
